@@ -1,16 +1,19 @@
 {
-	"agentid": "tcmagent",
 	"campus": "PNNL",
-	"building": "SIGMA1",
-	"temp_unit": "HP1",
+	"building": "350_BUILDING",
 	"power_unit": "METERS",
-	"window_size_in_day": 1,
-    "min_required_window_size_in_percent": 100,
-	"interval_in_min": 1,
-    "schedule_run_in_hr": 1,
+    "power_name": "WholeBuildingPowerWithoutShopAirCompressor",
+    "out_temp_unit": "METERS",
+    "out_temp_name": "OutdoorAirTemperature",
+    "ts_name": "Date",
+    "tz": "US/Pacific",
     "aggregate_in_min": 60,
 
-	"out_temp_name": "OutdoorAirTemperature",
-    "power_name": "WholeBuildingPower",
-    "ts_name": "Date"
+    "calculation_mode": 0, #0: avg, 1: top5
+
+    #optional for debug purpose
+    "debug_folder": "//home/yingying/Desktop/5.0RC/volttron-applications/pnnl/PGnE/",
+
+    "manual_set_adj_value": false,
+    "fix_adj_value": 1.26
 }
