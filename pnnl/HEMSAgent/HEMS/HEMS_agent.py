@@ -12,7 +12,7 @@ from volttron.platform.messaging import topics, headers as headers_mod
 
 from scipy.interpolate import interp1d
 
-from cvxopt import matrix, solvers
+#from cvxopt import matrix, solvers
 from os.path import warnings
 
 utils.setup_logging()
